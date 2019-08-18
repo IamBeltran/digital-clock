@@ -4,12 +4,12 @@
   "private": false,
   "description": "Digital Clock is a dummy Electron application that displays the current time",
   "keywords": [
+    "DEVELOPMENT",
     "APP",
-    "BOILERPLATE",
-    "BUILD",
-    "DEV",
     "ELECTRON",
-    "JAVASCRIPT"
+    "JAVASCRIPT",
+    "DUMMY",
+    "TESTING"
   ],
   "homepage": "https://github.com/IamBeltran/digital-clock#readme",
   "bugs": {
