@@ -36,7 +36,8 @@
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder --publish never --win",
-    "release": "env-cmd electron-builder --publish always --win"
+    "release": "env-cmd electron-builder --publish always --win",
+    "postinstall": "install-app-deps"
   },
   "dependencies": {
     "electron-is-dev": "^1.1.0",
