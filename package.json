@@ -1,0 +1,91 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Digital Clock is a dummy Electron application that displays the current time",
+  "keywords": [
+    "APP",
+    "BOILERPLATE",
+    "BUILD",
+    "DEV",
+    "ELECTRON",
+    "JAVASCRIPT"
+  ],
+  "homepage": "https://github.com/IamBeltran/digital-clock#readme",
+  "bugs": {
+    "url": "https://github.com/IamBeltran/digital-clock/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamBeltran/digital-clock.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Victor Giovanni Beltrán Rodríguez",
+    "email": "beltran-victor@outlook.com",
+    "url": "https://vgbr-dev.blogspot.com"
+  },
+  "contributors": [
+    {
+      "name": "Victor Giovanni Beltrán Rodriguez",
+      "email": "beltran-victor@outlook.com",
+      "url": "https://vgbr-dev.blogspot.com"
+    }
+  ],
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --publish never --win",
+    "release": "env-cmd electron-builder --publish always --win"
+  },
+  "dependencies": {
+    "electron-is-dev": "^1.1.0",
+    "electron-log": "^3.0.7",
+    "electron-updater": "^4.1.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "electron": "5.0.8",
+    "electron-builder": "21.2.0",
+    "env-cmd": "^9.0.3",
+    "eslint": "^6.1.0"
+  },
+  "engines": {},
+  "engineStrict": false,
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [],
+  "analyze": true,
+  "build": {
+    "appId": "com.electron.digitalclock",
+    "productName": "digital-clock",
+    "copyright": "Copyright © year 2019 ${author}",
+    "artifactName": "${name}-${version}-${platform}.${ext}",
+    "directories": {
+      "output": "release",
+      "buildResources": "assets"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "repo": "digital-clock",
+        "owner": "IamBeltran",
+        "private": false
+      }
+    ],
+    "win": {
+      "icon": "assets/icons/256x256.png",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": true
+    },
+    "electronVersion": "5.0.8"
+  }
+}
